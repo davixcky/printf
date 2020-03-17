@@ -40,3 +40,13 @@ int print_n(char *str, int n)
 	return (i);
 }
 
+int print(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] =! '\0'; ++i)
+		i++;
+
+	return (i);
+}
+
