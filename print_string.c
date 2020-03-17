@@ -7,16 +7,18 @@
  * Return: String length.
  */
 
-int print_string(va_list list)
+int print_string(va_list valist)
 {
-	char *aux;
-	int i;
+	char *p;
+	int p_len = 0;
 
-	aux = va_arg(list, char*);
+	p = va_arg(list, char*);
 
-	for (i = 0; aux[i] != 0; i++)
-		_putchar(aux[i]);
+	if (p == NULL)
+		p_len = print("(null");
 
-	return (i);
+	p_len = print(p);
+
+	return (p_len);
 }
 
