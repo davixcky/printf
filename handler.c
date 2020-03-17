@@ -38,10 +38,6 @@ int handler(const char *str, va_list list)
 int percent_handler(const char *str, va_list list, int *i)
 {
 	int size, j, number_formats;
-
-	size = j = 0;
-	*i = *i + 1;
-
 	format formats[] = {
 		{'d', print_int},
 		{'i', print_int},
@@ -49,6 +45,10 @@ int percent_handler(const char *str, va_list list, int *i)
 		{'c', print_char},
 		{'%', print_char}
 	};
+
+
+	size = j = 0;
+	*i = *i + 1;
 
 	number_formats = sizeof(formats) / sizeof(formats[0]);
 	for (; j < number_formats; j++)
