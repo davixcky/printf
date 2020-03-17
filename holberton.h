@@ -8,6 +8,8 @@
 /* utils.c */
 int _strlen(const char *);
 int _putchar(char);
+int print(char *);
+char* itoa(int, char *, int);
 
 /* printf.c */
 int _printf(const char *, ...);
@@ -19,10 +21,7 @@ int percent_handler(const char *, va_list, int *);
 /* printers */
 int print_string(va_list);
 int print_char(va_list);
-int print_n(char *str, int n);
-char* itoa(int, char *, int);
-int print(char *);
-
+int print_integer(va_list);
 /**
  * struct _format - Typedef struct
  *
