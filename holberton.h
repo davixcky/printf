@@ -20,6 +20,7 @@ int percent_handler(const char *, va_list, int *);
 int print_int(va_list);
 int print_string(va_list);
 int print_char(va_list);
+int print_n(char *str, int n);
 
 
 /**

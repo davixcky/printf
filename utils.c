@@ -29,3 +29,14 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+int print_n(char *str, int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+		_putchar(str[i]);
+
+	return (i)
+}
+
