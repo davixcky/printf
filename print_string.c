@@ -15,7 +15,7 @@ int print_string(va_list list)
 	aux = va_arg(list, char*);
 
 	for (i = 0; aux[i] != 0; i++)
-		;
+		_putchar(aux[i]);
 
 	return (i);
 }

@@ -17,11 +17,9 @@ int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 
 /* printers */
-int print_int(va_list);
 int print_string(va_list);
 int print_char(va_list);
 int print_n(char *str, int n);
-
 
 /**
  * struct _format - Typedef struct
