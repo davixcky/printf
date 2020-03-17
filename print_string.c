@@ -7,7 +7,7 @@
  * Return: String length.
  */
 
-int print_string(va_list valist)
+int print_string(va_list list)
 {
 	char *p;
 	int p_len;
