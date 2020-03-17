@@ -20,6 +20,8 @@ int percent_handler(const char *, va_list, int *);
 int print_string(va_list);
 int print_char(va_list);
 int print_n(char *str, int n);
+char* itoa(int, char *, int);
+int print(char *);
 
 /**
  * struct _format - Typedef struct
