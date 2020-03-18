@@ -1,0 +1,77 @@
+./" This is _printf manpage
+.TH man 3 "17 May 2020" "1.0" "_printf man page"
+.SH NAME
+.B _printf
+- format and data.
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]...
+.SH DESCRIPTION
+Print ARGUMENT(s) according to FORMAT:
+
+\\"     double quote.
+
+\\\\     backslash.
+
+\\b     backspace.
+
+\\n     new line.
+
+\\r     carriage return.
+
+\\t     horizontal tab.
+
+%%     a single %.
+
+.SH CONVERSION CHARACTERS
+.B The conversion specifiers and their meanings are:
+.IP -b 
+The unsigned int argument is converted to binary.
+
+.IP -d, i  
+The int argument is converted to signed decimal notation.
+
+.IP -c
+The int argument is converted to an unsigned char, and the resulting character is written.
+
+
+.IP -o, u, x, X
+The unsigned int argument is converted to ( ) notation:
+
+unsigned octal: (o).
+
+unsigned decimal: (u).
+
+unsigned hexadecimal: (x and X).
+
+.IP -s
+Characters from the array are written up to (but not including) a terminating null byte ('\0').
+	
+.IP -S 
+Characters from the array are written up to (but not including) a terminating null byte ('\0').
+
+Not include characters (0 < ASCII value < 32 or >= 127), are printed \x, , followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
+
+.IP -p
+The void * pointer argument is printed in hexadecimal (as if by %#x or %#lx).
+
+.SH SEE ALSO
+
+.I printf(1), printf(3).
+
+.SH BUGS
+
+No known bugs.
+
+.SH AUTHOR
+
+David Orozco & Jose Parrales.
+
+.SH COPYRIGHT
+
+Copyright © 2020 Holberton School B.
+
+
+Copyright © SS64.com 1999-2020.
+
+
+Copyright Â© 2010 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
