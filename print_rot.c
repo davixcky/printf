@@ -40,7 +40,7 @@ int print_rot(va_list list)
 	p = va_arg(list, char *);
 	p_buffer = rot13((p != NULL) ? p : "(null)");
 
-	p_len = print((p_buffer != NULL) ? p_buffer : "(null)");
+	p_len = print(p_buffer);
 
 	return (p_len);
 }
