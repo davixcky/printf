@@ -48,7 +48,8 @@ int percent_handler(const char *str, va_list list, int *i)
 		{'c', print_char},
 		{'d', print_integer},
 		{'i', print_integer},
-		{'b', print_binary}
+		{'b', print_binary},
+		{'R', print_rot}
 	};
 
 	size = j = 0;
