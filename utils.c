@@ -30,6 +30,12 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+/**
+ * print - print char.
+ * @str: string.
+ *
+ * Return: string length.
+ */
 
 int print(char *str)
 {

@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * swap - swap char.
+ * @a: char 1.
+ * @b: char 2.
+ *
+ * Return: void.
+ */
 
 void swap(char *a, char *b)
 {
@@ -9,6 +16,14 @@ void swap(char *a, char *b)
 	*a = *b;
 	*b = aux;
 }
+
+/**
+ * reverse - reverse string.
+ * @str: string.
+ * @length: length.
+ *
+ * Return: void.
+ */
 
 void reverse(char str[], int length)
 {
@@ -24,7 +39,16 @@ void reverse(char str[], int length)
 	}
 }
 
-char *itoa(int num, char* str, int base)
+/**
+ * itoa - integer to ascii.
+ * @num: num.
+ * @str: string.
+ * @base: base.
+ *
+ * Return: char.
+ */
+
+char *itoa(int num, char *str, int base)
 {
 	int i, rem;
 	int isNegative;

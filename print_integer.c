@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * print_integer - print integer.
+ * @list: va_list.
+ *
+ * Return: size.
+ */
+
 int print_integer(va_list list)
 {
 	char buff[1024];
