@@ -38,7 +38,7 @@ int print_rot(va_list list)
 	int p_len;
 
 	p = va_arg(list, char *);
-	p_buffer = rot13(p);
+	p_buffer = rot13((p != NULL) ? p : "(ahyy)");
 
 	p_len = print(p_buffer);
 
