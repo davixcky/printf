@@ -9,7 +9,7 @@
 int _strlen(const char *);
 int _putchar(char);
 int print(char *);
-char *itoa(int, char *, int);
+char *itoa(long int, int);
 
 /* printf.c */
 int _printf(const char *, ...);
