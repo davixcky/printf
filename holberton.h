@@ -26,9 +26,8 @@ int print_n(char *str, int n);
 char *itoa(int, char *, int);
 int print(char *);
 
-== == == =
 int print_integer(va_list);
->> >> >> > 24120261667721075ac4c2e3078afa077c8c4573
+
 /**
  * struct _format - Typedef struct
  *
