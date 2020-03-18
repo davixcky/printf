@@ -25,18 +25,13 @@ void swap(char *a, char *b)
  * Return: void.
  */
 
-void reverse(char str[], int length)
+void reverse(char *str, int length)
 {
-	int start, end;
+	int i;
 
-	end = length - 1;
-	start = 0;
-	while (start < end)
-	{
-		swap(str + start, str + end);
-		start++;
-		end--;
-	}
+	for (i = 0; i < length / 2; i++)
+		swap(str + i, str + length - i - 1);
+
 }
 
 /**
