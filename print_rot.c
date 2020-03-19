@@ -5,7 +5,7 @@
  * @s: String to enconde
  * Return: String encode
  */
-char *rot13(char *s)
+int rot13(char *s)
 {
 	int i, j;
 	char *normal, *rot13;
@@ -18,12 +18,15 @@ char *rot13(char *s)
 		{
 			if (s[i] == normal[j])
 			{
-				s[i] = rot13[j];
+				_putchar(rot13[j]);
 				break;
 			}
 		}
+
+		if (!normal[j])
+			_putchar(s[i]);
 	}
-	return (s);
+	return (i);
 }
 
 /**
@@ -34,13 +37,11 @@ char *rot13(char *s)
  **/
 int print_rot(va_list list)
 {
-	char *p, *p_buffer;
+	char *p;
 	int p_len;
 
 	p = va_arg(list, char *);
-	p_buffer = rot13((p != NULL) ? p : "(ahyy)");
-
-	p_len = print(p_buffer);
+	p_len = rot13((p != NULL) ? p : "(ahyy)");
 
 	return (p_len);
 }
