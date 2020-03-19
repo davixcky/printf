@@ -49,10 +49,13 @@ int percent_handler(const char *str, va_list list, int *i)
 		{'d', print_integer},
 		{'i', print_integer},
 		{'b', print_binary},
+		{'u', print_unsigned},
+		{'o', print_octal},
+		{'x', print_hexadecimal_low},
+		{'X', print_hexadecimal_upp},
 		{'R', print_rot}
 	};
 
-	size = j = 0;
 	*i = *i + 1;
 
 	if (str[*i] == '\0')
@@ -65,7 +68,7 @@ int percent_handler(const char *str, va_list list, int *i)
 	}
 
 	number_formats = sizeof(formats) / sizeof(formats[0]);
-	for (; j < number_formats; j++)
+	for (size = j = 0; j < number_formats; j++)
 	{
 		if (str[*i] == formats[j].type)
 		{
@@ -75,10 +78,8 @@ int percent_handler(const char *str, va_list list, int *i)
 
 	}
 
-	_putchar('%');
-	_putchar(str[*i]);
-	size = 2;
+	_putchar('%'), _putchar(str[*i]);
 
-	return (size);
+	return (2);
 }
 
