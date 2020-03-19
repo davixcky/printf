@@ -12,8 +12,6 @@ Print ARGUMENT(s) according to FORMAT:
 
 \\\\     backslash.
 
-\\b     backspace.
-
 \\n     new line.
 
 \\r     carriage return.
@@ -27,14 +25,14 @@ Print ARGUMENT(s) according to FORMAT:
 .IP -b 
 The unsigned int argument is converted to binary.
 
-.IP -d, i  
+.IP -d,i
 The int argument is converted to signed decimal notation.
 
 .IP -c
 The int argument is converted to an unsigned char, and the resulting character is written.
 
 
-.IP -o, u, x, X
+.IP -o,u,x,X
 The unsigned int argument is converted to ( ) notation:
 
 unsigned octal: (o).
@@ -53,6 +51,18 @@ Not include characters (0 < ASCII value < 32 or >= 127), are printed \x, , follo
 
 .IP -p
 The void * pointer argument is printed in hexadecimal (as if by %#x or %#lx).
+
+.SH EXAMPLES
+
+.IP -print a string.
+_printf("This is a string");
+_printf("%s\n", "I am a string too!");
+
+.IP print char.
+_printf("Character:[%c]\n", 'H');
+
+.IP -print integuer.
+_printf("%d, %i\n", 2, 5);
 
 .SH SEE ALSO
 
