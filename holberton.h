@@ -28,7 +28,7 @@ int print_unsigned(va_list);
 int print_octal(va_list);
 int print_hexadecimal_low(va_list);
 int print_hexadecimal_upp(va_list);
-
+int print_pointer(va_list);
 
 /**
  * struct _format - Typedef struct
