@@ -20,7 +20,11 @@ int print_pointer(va_list list)
 		return (print("(nil)"));
 
 	size = print("0x");
-	size += print((p_buff != NULL) ? p_buff : "NULL");
+
+	if (!_strcmp(p_buff, "-1"))
+		size += print("ffffffffffffffff");
+	else
+		size += print(p_buff);
 
 	return (size);
 }
