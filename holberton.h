@@ -7,7 +7,6 @@
 
 /* utils.c */
 int _strlen(const char *);
-int _putchar(char);
 int print(char *);
 char *itoa(long int, int);
 
@@ -29,6 +28,11 @@ int print_octal(va_list);
 int print_hexadecimal_low(va_list);
 int print_hexadecimal_upp(va_list);
 int print_pointer(va_list);
+int print_rev_string(va_list);
+
+/* _putchar.c */
+int _putchar(char);
+int buffer(char);
 
 /**
  * struct _format - Typedef struct
